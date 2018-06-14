@@ -1,0 +1,70 @@
+$fonts: 'Open Sans', sans-serif;
+$primary-color: #313234;
+$second-color: #1A2627;
+$font-color: #FFFFFF;
+$title-color: #A8A345;
+
+* {box-sizing: border-box;}
+body {
+	font-family: $fonts; 
+	margin: 0 auto;	
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+section .container {
+	margin: 50px auto;
+	text-align: center;		
+}
+header {
+	background-color: $primary-color;
+	min-height: 50px;
+	text-align: center;
+		img {
+			padding: 10px 0;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		a {
+			line-height: 50px;
+			color: $font-color;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+}
+.hero {
+	background-image: url(https://images.unsplash.com/photo-1459233313842-cd392ee2c388?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4fabfc1437f1bf55ce051a8ce3efd6d4&auto=format&fit=crop&w=750&q=80);
+	padding: 150px;
+	background-color: $second-color;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.slogan {
+	background: rgba(255,255,255, 0.5);
+	max-width: 800px;
+	float: left;
+	margin-top: -75px;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+		h1 {
+			padding: 10px;
+			color: $font-color;
+			text-transform: uppercase;
+		}
+}
+.1 Song {
+	padding: 10px;
+		h2 {
+			text-transform: uppercase;
+			text-decoration: underline overline wavy grey;
+			color: &title-color;
+			font-weight: bold;
+		}
+		p {
+			padding-bottom: 15px;
+		}
+}
