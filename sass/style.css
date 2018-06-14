@@ -1,68 +1,61 @@
-/*
-Error: Invalid CSS after ".": expected class name, was "1 Song"
-        on line 59 of style.scss
+* {
+  box-sizing: border-box; }
 
-54: 			padding: 10px;
-55: 			color: $font-color;
-56: 			text-transform: uppercase;
-57: 		}
-58: }
-59: .1 Song {
-60: 	padding: 10px;
-61: 		h2 {
-62: 			text-transform: uppercase;
-63: 			text-decoration: underline overline wavy grey;
-64: 			color: &title-color;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto; }
 
-Backtrace:
-style.scss:59
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1278:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1208:in `expected'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1203:in `tok!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:197:in `class_selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:159:in `simple_selector_sequence'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:111:in `selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:86:in `selector_comma_sequence'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/parser.rb:1186:in `expr!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \".\": expected class name, was \"1 Song\"\A         on line 59 of style.scss\A \A 54: 			padding: 10px;\A 55: 			color: $font-color;\A 56: 			text-transform: uppercase;\A 57: 		}\A 58: }\A 59: .1 Song {\A 60: 	padding: 10px;\A 61: 		h2 {\A 62: 			text-transform: uppercase;\A 63: 			text-decoration: underline overline wavy grey;\A 64: 			color: &title-color;"; }
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+section .container {
+  margin: 50px auto;
+  text-align: center; }
+
+header {
+  background-color: #313234;
+  min-height: 50px;
+  text-align: center; }
+  header img {
+    padding: 10px 0; }
+  header ul {
+    list-style-type: none;
+    padding: 0; }
+  header a {
+    line-height: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1459233313842-cd392ee2c388?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4fabfc1437f1bf55ce051a8ce3efd6d4&auto=format&fit=crop&w=750&q=80);
+  padding: 150px;
+  background-color: #1A2627;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.slogan {
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 800px;
+  float: left;
+  margin-top: -75px;
+  letter-spacing: 5px;
+  word-spacing: 10px; }
+  .slogan h1 {
+    padding: 10px;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+
+.Song {
+  padding: 10px; }
+  .Song h2 {
+    text-transform: uppercase;
+    text-decoration: underline overline wavy grey;
+    color: .Song h2 title-color;
+    font-weight: bold; }
+  .Song p {
+    padding-bottom: 15px; }
+
+/*# sourceMappingURL=style.css.map */
